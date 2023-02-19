@@ -1,0 +1,42 @@
+export const Questions = [
+    {
+        prompt: "Who was the inventor of Radar?",
+        optionA: "Austin",
+        optionB: "Bush Wall",
+        optionC: "Fleming",
+        optionD: "Robert Watson",
+        answer: "optionD",
+    },
+    {
+        prompt: "Solar radiation is measured by",
+        optionA: "Astrometer",
+        optionB: "Barometer",
+        optionC: "Pyrometer",
+        optionD: "Manometer",
+        answer: "optionC",
+    },
+    {
+        prompt: "Relative humidity is measured by",
+        optionA: "Lactometer",
+        optionB: "Barometer",
+        optionC: "Hydrometer",
+        optionD: "Hygrometer",
+        answer: "optionD",
+    },
+    {
+        prompt: "Curie is the unit of",
+        optionA: "temperature",
+        optionB: "radio activity",
+        optionC: "energy",
+        optionD: "heat",
+        answer: "optionB",
+    },
+    {
+        prompt: "Which one of the following is not an amorphous substance?",
+        optionA: "Rubber",
+        optionB: "Glass",
+        optionC: "Polymer",
+        optionD: "Copper",
+        answer: "optionD",
+    },
+];
