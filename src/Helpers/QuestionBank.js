@@ -5,7 +5,7 @@ export const Questions = [
         optionB: "Bush Wall",
         optionC: "Fleming",
         optionD: "Robert Watson",
-        answer: "optionD",
+        answer: "D",
     },
     {
         prompt: "Solar radiation is measured by",
@@ -13,7 +13,7 @@ export const Questions = [
         optionB: "Barometer",
         optionC: "Pyrometer",
         optionD: "Manometer",
-        answer: "optionC",
+        answer: "C",
     },
     {
         prompt: "Relative humidity is measured by",
@@ -21,7 +21,7 @@ export const Questions = [
         optionB: "Barometer",
         optionC: "Hydrometer",
         optionD: "Hygrometer",
-        answer: "optionD",
+        answer: "D",
     },
     {
         prompt: "Curie is the unit of",
@@ -29,7 +29,7 @@ export const Questions = [
         optionB: "radio activity",
         optionC: "energy",
         optionD: "heat",
-        answer: "optionB",
+        answer: "B",
     },
     {
         prompt: "Which one of the following is not an amorphous substance?",
@@ -37,6 +37,6 @@ export const Questions = [
         optionB: "Glass",
         optionC: "Polymer",
         optionD: "Copper",
-        answer: "optionD",
+        answer: "D",
     },
 ];
