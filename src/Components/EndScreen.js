@@ -10,8 +10,8 @@ function EndScreen() {
     setGameState("menu");
   }
   return <div className="EndScreen">
-    <h1>Quiz Finished! Thank you for playing Quiz!</h1>
-    <h3>{score} / {Questions.length} </h3>
+    <h1>Thank you for playing Quiz!</h1>
+    <h3>Your Score: {score} / {Questions.length} </h3>
     <button onClick={restartQuiz} > Restart Quiz</button>
   </div>;
 }

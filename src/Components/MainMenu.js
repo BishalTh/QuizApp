@@ -4,7 +4,7 @@ import { QuizContext } from "../Helpers/Context";
 
 
 export default function MainMenu() {
-  const { gameState, setGameState } = useContext(QuizContext);
+  const { setGameState } = useContext(QuizContext);
   return (
     <div className="Menu">
       <button

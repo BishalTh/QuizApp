@@ -9,7 +9,7 @@
   width: 500px;
   height: 500px;
   border-radius: 10px;
-  background-color: lightseagreen;
+  background-color: rgb(24, 38, 37);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,21 +29,48 @@ button:hover {
   cursor: pointer;
 }
 
-.Quiz {
+/* .Quiz {
   width: 500px;
-  height: 500px;
+  height: 600px;
   border-radius: 10px;
   background-color: lightseagreen;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}  */
+.Quiz {
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  background-color: lightseagreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: quizFadeIn 1s ease;
+}
+
+@keyframes quizFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Menu button:hover,
+.Quiz button:hover {
+  cursor: pointer;
 }
 
 .Menu,
 .Quiz,
 .EndScreen h1 {
   color: white;
+  font-size: 25px;
 }
 
 .EndScreen {
