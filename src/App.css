@@ -82,8 +82,18 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: endscreenFadeIn 1s ease;
 }
-
+@keyframes endscreenFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 #nextQuestion {
   width: 200px;
 }

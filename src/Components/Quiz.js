@@ -4,6 +4,7 @@ import { Questions } from "../Helpers/QuestionBank";
 import "./Quiz.css";
 
 function Quiz() {
+  
   const { score, setScore, setGameState } = useContext(QuizContext);
   const [answeredQuestions, setAnsweredQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -75,7 +76,7 @@ function Quiz() {
 
   return (
     <div className="Quiz">
-      <h1 className="question" >{currentQuestion.prompt}</h1>
+      <h1 className="question">{currentQuestion.prompt}</h1>
       <div className="options">
         <button
           style={{ backgroundColor: optionColor("A") }}
@@ -107,15 +108,15 @@ function Quiz() {
         </button>
       </div>
       {answeredQuestions.length === Questions.length - 1 ? (
-        <button onClick={finishQuiz}>Finish Quiz</button>
+        <button disabled={!optionChosen} onClick={finishQuiz}>
+          Finish Quiz
+        </button>
       ) : (
         <button disabled={!optionChosen} onClick={nextQuestion}>
           Next Question
         </button>
       )}
     </div>
- 
-
   );
 }
 
