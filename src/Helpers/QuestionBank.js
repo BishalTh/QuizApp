@@ -1,4 +1,4 @@
-
+// This is an array of objects that contains the quiz questions and their options
 export const Questions = [
     {
         prompt: "Q.Who was the inventor of Radar?",

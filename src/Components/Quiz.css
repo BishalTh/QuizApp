@@ -1,62 +1,89 @@
+/* CSS styles for the Quiz component */
 .Quiz {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.2em;
-  }
-  
-  .options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  button {
-    background-color: #fff;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  button:hover {
-    transform: scale(1.1);
-  }
-  
-  button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-  
-  button.correct {
-    background-color: #1abc9c;
-    color: #fff;
-  }
-  
-  button.wrong {
-    background-color: #e74c3c;
-    color: #fff;
-  }
-  
-  button.correct:hover {
-    background-color: #148f77;
-  }
-  
-  button.wrong:hover {
-    background-color: #c0392b;
-  }
-  
-  button:active {
-    transform: scale(0.9);
-  }
+  /* Set the maximum width of the Quiz component to 800px and center it horizontally */
+  max-width: 800px;
+  margin: 0 auto;
 
-  .question {
-    font-size: 22px;
-  }
-  
-  
-  
+  /* Center the text inside the Quiz component and set its font size to 1.2em */
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* CSS styles for the answer options */
+.options {
+  /* Set the display of the answer options to a vertical column and center them horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Add some margin at the top of the answer options */
+  margin-top: 20px;
+}
+
+/* CSS styles for buttons */
+button {
+  /* Set the background color of the button to white and the text color to black */
+  background-color: #fff;
+  color: #000;
+
+  /* Remove the border and add some border radius, padding, and margin */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+
+  /* Change the cursor to a pointer on hover and add a transition effect */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* CSS styles for buttons on hover */
+button:hover {
+  /* Enlarge the button by 10% */
+  transform: scale(1.1);
+}
+
+/* CSS styles for disabled buttons */
+button:disabled {
+  /* Reduce the opacity of disabled buttons and change the cursor to not-allowed */
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* CSS styles for buttons with the "correct" class */
+button.correct {
+  /* Set the background color to green and the text color to white */
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+/* CSS styles for buttons with the "wrong" class */
+button.wrong {
+  /* Set the background color to red and the text color to white */
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+/* CSS styles for buttons with the "correct" class on hover */
+button.correct:hover {
+  /* Darken the background color */
+  background-color: #148f77;
+}
+
+/* CSS styles for buttons with the "wrong" class on hover */
+button.wrong:hover {
+  /* Darken the background color */
+  background-color: #c0392b;
+}
+
+/* CSS styles for buttons when pressed */
+button:active {
+  /* Shrink the button by 10% */
+  transform: scale(0.9);
+}
+
+/* CSS styles for the question text */
+.question {
+  /* Set the font size of the question text to 22px */
+  font-size: 22px;
+}

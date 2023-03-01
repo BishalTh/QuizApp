@@ -1,11 +1,15 @@
+/* The following is the CSS code for the entire Quiz App /
+/ This sets the font family, and centers the main content */
 .App {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.Menu {
+  }
+  
+  /* This styles the menu screen */
+  .Menu {
   width: 500px;
   height: 500px;
   border-radius: 10px;
@@ -14,22 +18,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.Menu input,
-button {
+  }
+  
+  /* This styles the input and button elements on the menu screen */
+  .Menu input,
+  button {
   width: 300px;
   height: 50px;
   margin: 5px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
-}
-
-button:hover {
+  }
+  
+  /* This styles the button when it is hovered over */
+  button:hover {
   cursor: pointer;
-}
-
-/* .Quiz {
+  }
+  
+  /* This styles the quiz screen.
+   This sets an animation for when the quiz screen appears */
+  .Quiz {
   width: 500px;
   height: 600px;
   border-radius: 10px;
@@ -38,42 +47,39 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}  */
-.Quiz {
-  width: 500px;
-  height: 600px;
-  border-radius: 10px;
-  background-color: lightseagreen;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
   animation: quizFadeIn 1s ease;
-}
-
-@keyframes quizFadeIn {
+  }
+  
+  /* This sets the animation for the quiz screen */
+  @keyframes quizFadeIn {
   from {
-    opacity: 0;
-    transform: translateY(-50px);
+  opacity: 0;
+  transform: translateY(-50px);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
   }
-}
-.Menu button:hover,
-.Quiz button:hover {
+  }
+  
+  /* This styles the button on both the menu and quiz screens when it is hovered over */
+  .Menu button:hover,
+  .Quiz button:hover {
   cursor: pointer;
-}
-
-.Menu,
-.Quiz,
-.EndScreen h1 {
+  }
+  
+  /* This sets the color and font size for the menu, quiz, and end screen headings */
+  .Menu,
+  .Quiz,
+  .EndScreen h1 {
   color: white;
   font-size: 25px;
-}
-
-.EndScreen {
+  }
+  
+  /* This styles the end screen.
+  This sets an animation for when the end screen appears */
+  .EndScreen {
   width: 500px;
   height: 500px;
   border-radius: 10px;
@@ -83,21 +89,26 @@ button:hover {
   justify-content: center;
   align-items: center;
   animation: endscreenFadeIn 1s ease;
-}
-@keyframes endscreenFadeIn {
+  }
+  
+  /* This sets the animation for the end screen */
+  @keyframes endscreenFadeIn {
   from {
-    opacity: 0;
-    transform: translateY(-50px);
+  opacity: 0;
+  transform: translateY(-50px);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
   }
-}
-#nextQuestion {
+  }
+  
+  /* This styles the "Next Question" button */
+  #nextQuestion {
   width: 200px;
-}
-
-h3 {
+  }
+  
+  /* This sets the color for all h3 headings */
+  h3 {
   color: #ffffff;
-}
+  }
